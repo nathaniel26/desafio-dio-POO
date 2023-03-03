@@ -1,0 +1,62 @@
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import br.com.dio.desafio.dominio.Conteudo;\r\nimport br.com.dio.desafio.dominio.Curso;\r\nimport br.com.dio.desafio.dominio.Mentoria;\r\n\r\nimport java.time.LocalDate;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        Curso curso1 = new Curso();\r\n        curso1.setTitulo(\"curso java\");\r\n        curso1.setDescricao(\"descrição bla bla bla\");\r\n        curso1.setCargaHoraria(8);\r\n\r\n        Curso curso2 = new Curso();\r\n        curso2.setTitulo(\"python\");\r\n        curso2.setDescricao(\"descrição bla bla bla\");\r\n        curso2.setCargaHoraria(5);\r\n\r\n\r\n        Mentoria mentoria = new Mentoria();\r\n        mentoria.setTitulo(\"mentoria java\");\r\n        mentoria.setDescricao(\"decricão bla bla bla\");\r\n        mentoria.setDate(LocalDate.now());\r\n\r\n        Conteudo conteudo1 = new Curso();\r\n        Conteudo conteudo2 = new Mentoria();\r\n\r\n        System.out.println(curso1);\r\n        System.out.println(curso2);\r\n        System.out.println(mentoria);\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+--- a/src/Main.java	(revision 5e035ae6b54d5f0da77896bedd8a0bcc2af1c729)
++++ b/src/Main.java	(date 1677876309700)
+@@ -29,11 +29,8 @@
+         System.out.println(curso2);
+         System.out.println(mentoria);
+ 
+-
++        
+ 
+ 
+-
+-
+-
+     }
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"529cd96b-2c7c-4e30-9a3f-9229757b4546\" name=\"Changes\" comment=\"Mentoria e curso\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_TAGS\">\r\n      <GitPushTagMode>\r\n        <option name=\"argument\" value=\"--tags\" />\r\n        <option name=\"title\" value=\"All\" />\r\n      </GitPushTagMode>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2MW0Ce9mV54Wtgx5dsRgxknNpeM\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d4216103-472b-4b90-8139-cdcf61cbf668\" name=\"Changes\" comment=\"\" />\r\n      <created>1677867905081</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1677867905081</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"first-commit\">\r\n      <created>1677869073676</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1677869073676</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"first-commit\">\r\n      <created>1677869186520</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1677869186520</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"second-commit\">\r\n      <created>1677869855346</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1677869855346</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Mentoria e curso\">\r\n      <created>1677871143210</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1677871143210</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"first-commit\" />\r\n    <MESSAGE value=\"second-commit\" />\r\n    <MESSAGE value=\"Mentoria e curso\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Mentoria e curso\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 5e035ae6b54d5f0da77896bedd8a0bcc2af1c729)
++++ b/.idea/workspace.xml	(date 1677876414494)
+@@ -4,7 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="529cd96b-2c7c-4e30-9a3f-9229757b4546" name="Changes" comment="Mentoria e curso" />
++    <list default="true" id="cce23d52-c18c-4c17-ba34-99bf9fc0a243" name="Changes" comment="Mentoria e curso">
++      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -82,6 +84,17 @@
+     </task>
+     <option name="localTasksCounter" value="5" />
+     <servers />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="first-commit" />

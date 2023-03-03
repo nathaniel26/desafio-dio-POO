@@ -1,6 +1,4 @@
-import br.com.dio.desafio.dominio.Conteudo;
-import br.com.dio.desafio.dominio.Curso;
-import br.com.dio.desafio.dominio.Mentoria;
+import br.com.dio.desafio.dominio.*;
 
 import java.time.LocalDate;
 
@@ -25,14 +23,31 @@ public class Main {
         Conteudo conteudo1 = new Curso();
         Conteudo conteudo2 = new Mentoria();
 
-        System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria);
+        //criamos um bootcamp
+        Bootcamp bootcamp = new Bootcamp();
+        bootcamp.setNome("Bootcamp java developer");
+        bootcamp.setDescricao("descricao");
+        bootcamp.getConteudos().add(curso1);
+        bootcamp.getConteudos().add(curso2);
+        bootcamp.getConteudos().add(mentoria);
 
+        //criamos 2 dev
+        Dev nathaniel = new Dev();
+        nathaniel.setNome("Nathaniel");
 
+        Dev joao = new Dev();
+        joao.setNome("João");
 
+        //inscrevemos no bootcamp
+        nathaniel.increverBootcamp(bootcamp);
+        //comcluiu a mentoria
+        nathaniel.getConteudosConcluidos().add(conteudo2);
 
+        System.out.println(nathaniel.getConteudosIncrito());
+        System.out.println(nathaniel.getConteudosConcluidos());
+        System.out.println(nathaniel.calcularXp());
 
+        
 
 
     }
